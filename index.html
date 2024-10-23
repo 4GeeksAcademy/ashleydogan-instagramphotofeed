@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Instragram</title>
+    <title>Instagram</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,7 +26,6 @@
         >
         <button
           class="navbar-toggler"
-          type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown"
@@ -36,9 +35,12 @@
           <i class="fa-solid fa-gear"></i>
           <i class="fa-solid fa-sort-down"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item me-1">
               <button
                 type="button"
                 class="btn btn-success"
@@ -74,6 +76,8 @@
                       <form>
                         <input
                           type="text"
+                          class="form-control"
+                          style="width: 80%; height: 100px"
                           placeholder="Add the caption for your post here"
                         />
                         <br />
@@ -120,85 +124,213 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <ul class="nav nav-pills" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link active"
-            id="grid-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#grid"
-            type="button"
-            role="tab"
-            aria-controls="grid"
-            aria-selected="true"
-          >
-            <i class="fa-solid fa-table-cells"></i>
-          </a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link"
-            id="single-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#single"
-            type="button"
-            role="tab"
-            aria-controls="single"
-            aria-selected="false"
-          >
-            <i class="fa-solid fa-square"></i>
-          </a>
-        </li>
-      </ul>
-      <div
-        class="tab-pane text-center overflow-hidden"
-        id="grid"
-        aria-labelledby="grid-tab"
-        role="tabpanel"
-      >
-        <div class="row mb-2">
-          <div class="col-4">
-            <img
-              src="https://placedog.net/800/640?id=87"
-              class="card-img-top"
-              alt="..."
-            />
+    <div class="container-fluid justify-content-center">
+      <div class="tab-content">
+        <ul class="nav nav-pills justify-content-center pb-1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active"
+              id="grid-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#grid"
+              type="button"
+              role="tab"
+              aria-controls="grid"
+              aria-selected="true"
+            >
+              <i class="fa-solid fa-table-cells"></i>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="single-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#single"
+              type="button"
+              role="tab"
+              aria-controls="single"
+              aria-selected="false"
+            >
+              <i class="fa-solid fa-square"></i>
+            </a>
+          </li>
+        </ul>
+        <div
+          class="tab-pane text-center overflow-hidden active"
+          id="grid"
+          aria-labelledby="grid-tab"
+          role="tabpanel"
+        >
+          <div class="row mb-2">
+            <div class="col-4">
+              <img
+                src="https://placedog.net/800/640?id=87"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://placedog.net/800/640?id=83"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://placedog.net/800/640?id=42"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
           </div>
-          <div class="col-4">
-            <img
-              src="https://placedog.net/800/640?id=87"
-              class="card-img-top"
-              alt="..."
-            />
+          <div class="row mb-2">
+            <div class="col-4">
+              <img
+                src="https://placedog.net/800/640?id=61"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://placedog.net/800/640?id=13"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://placedog.net/800/640?id=26"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
           </div>
-          <div class="col-4">
-            <img
-              src="https://placedog.net/800/640?id=87"
-              class="card-img-top"
-              alt="..."
-            />
+          <div class="row mb-2">
+            <div class="col-4">
+              <img
+                src="https://placedog.net/800/640?id=99"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://placedog.net/800/640?id=51"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://placedog.net/800/640?id=77"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div
-        class="tab-pane overflow-hidden"
-        id="single"
-        aria-labelledby="single-tab"
-        role="tabpanel"
-      >
-        <img
-          src="https://placedog.net/800/640?id=87"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">309 Likes</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+        <div
+          class="tab-pane overflow-hidden"
+          id="single"
+          aria-labelledby="single-tab"
+          role="tabpanel"
+        >
+          <div class="d-flex flex-column align-items-center">
+            <div class="card mb-2 p-1" style="width: 18rem">
+              <h4>Cute dog</h4>
+              <img
+                src="https://placedog.net/800/640?id=87"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">309 Likes</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-2 p-1" style="width: 18rem">
+              <h4>Another dog</h4>
+              <img
+                src="https://placedog.net/800/640?id=83"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">97 Likes</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-2 p-1" style="width: 18rem">
+              <h4>Dog 3</h4>
+              <img
+                src="https://placedog.net/800/640?id=42"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">256 Likes</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-2 p-1" style="width: 18rem">
+              <h4>Hotdog dog</h4>
+              <img
+                src="https://placedog.net/800/640?id=61"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">112 Likes</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-2 p-1" style="width: 18rem">
+              <h4>So floofy</h4>
+              <img
+                src="https://placedog.net/800/640?id=13"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">89 Likes</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-2 p-1" style="width: 18rem">
+              <h4>Pug life</h4>
+              <img
+                src="https://placedog.net/800/640?id=26"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-title">222 Likes</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
